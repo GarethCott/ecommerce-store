@@ -5,6 +5,7 @@ import { FC } from 'react'
 import IconButton from './IconButton';
 import { Expand, ShoppingCart } from 'lucide-react';
 import Currency from './Currency';
+import { useRouter } from 'next/navigation';
 
 interface ProdcutCardProps {
   data:Product;
@@ -13,6 +14,10 @@ interface ProdcutCardProps {
 const ProdcutCard: FC<ProdcutCardProps> = ({
     data
 }) => {
+    const router = useRouter();
+    const handleClick = () => {
+        router.push(`/product/${data?.id}`)
+    }
   return (
     <div className='bg-white group cursor-pointer rounded-xl border p-3 space-y-4'>
         {/* Images and actions */}
@@ -21,7 +26,7 @@ const ProdcutCard: FC<ProdcutCardProps> = ({
             <div className='opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5'>
                 <div className='flex gap-x-6 justify-center'>
                     <IconButton 
-                    onClick={()=>{}}
+                    onClick={handleClick}
                     icon={<Expand size={20} className='text-gray-600'/>}
                     />
                     <IconButton 
