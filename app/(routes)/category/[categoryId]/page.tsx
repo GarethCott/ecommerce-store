@@ -41,7 +41,7 @@ const CategoryPage: FC<CategoryPageProps> = async ({
                 <div className='lg:grid lg:grid-cols-5 lg:gap-x-8'>
                     {/* Add mobile filters */}
                     <div className='hidden lg:block'>
-                        <Filter valueKey="sizeid" name="Sizes" data={sizes}/>
+                        <Filter valueKey="sizeId" name="Sizes" data={sizes}/>
                     </div>
                 </div>
             </div>
