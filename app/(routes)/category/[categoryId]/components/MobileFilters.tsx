@@ -46,7 +46,7 @@ const MobileFilters: FC<MobileFiltersProps> = ({
                     {/* render filters */}
 
                     <div className='p-4'>
-                        <Filter valueKey="sizeId" name="Sizes" data={sizes}/>
+                        <Filter valueKey="sizeId" name="Sizes" data={sizes} />
                         <Filter valueKey="colorId" name="Colors" data={colors}/>
                     </div>
                 </Dialog.Panel>
