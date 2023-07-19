@@ -1,6 +1,6 @@
-# Ecommerce Website
+# E-commerce Website
 
-> This is an ecommerce website project consisting of the frontend client store.
+> This is an e-commerce website project consisting of the frontend client store.
 
 - [Website](https://ecommerce-store-liart-one.vercel.app)
 
